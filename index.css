@@ -1,0 +1,402 @@
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  BANNER */
+/* ******************************************************************************************************************************** */
+body {
+  /* max-width: 100%; */
+  overflow-x: hidden;
+  /* color: rgb(105, 105, 105); */
+  background-color: rgba(30, 115, 172, 0.15);
+  text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  margin: 1rem;
+  height: 270px;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(30, 115, 172, 0.6),
+      rgba(142, 57, 153, 0.7)
+    ),
+    url(images/banner2.jpg);
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+@media (max-width: 1399px) {
+  header {
+    margin: 0;
+  }
+}
+@media (max-width: 350px) {
+  header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.logo {
+  height: 8%;
+  position: absolute;
+}
+
+h1 {
+  text-shadow: 0.2rem 0.3rem 0.1rem rgba(0, 0, 50, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: 25%;
+}
+@media (max-width: 700px) {
+  h1 {
+    top: 35%;
+  }
+}
+.link-projects {
+  background-color: white;
+  color: rgba(50, 50, 50, 0.8);
+  position: relative;
+  top: 35%;
+  left: calc(50vw - 93.86px);
+  text-shadow: 0.06rem 0.07rem 0.02rem rgba(150, 180, 255, 1);
+  transition: transform 0.2s;
+}
+@media (max-width: 700px) {
+  .link-projects {
+    top: 45%;
+  }
+}
+.link-projects:hover {
+  background-color: white;
+  transform: translateY(-0.2em);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
+}
+.link-projects:active {
+  background-color: white !important;
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  FLIP CARDS BASIC */
+/* ******************************************************************************************************************************** */
+
+.flip-card {
+  background-color: transparent;
+  width: 30rem;
+  height: 18rem;
+  margin: 2rem;
+  perspective: 2000px; /* 3D effect */
+  margin-bottom: 50px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s ease-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  background-color: rgba(30, 115, 172, 0);
+}
+
+.flip-card-front {
+  border: none;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  border: none;
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  FLIP CARD STYLES */
+/* ******************************************************************************************************************************** */
+
+.flip-card-front .card-body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: skew(0, -2deg);
+  border: solid rgba(0, 0, 0, 0.8) 3px;
+  border-radius: 3px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
+}
+
+.flip-card-back .card-body {
+  width: 100%;
+  height: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 7%;
+  transform: skew(0, 2deg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(30, 115, 172, 0.6),
+      rgba(142, 57, 153, 0.7)
+    ),
+    url(images/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  border: solid rgba(0, 0, 0, 0.65) 2px;
+  border-radius: 3px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
+}
+.brands {
+  transform: skew(0, -2deg);
+}
+.proj-p {
+  color: white;
+  transform: skew(0, -2deg);
+  margin: 0;
+  padding: 0;
+}
+.proj-p strong {
+  display: block;
+}
+.links {
+  transform: skew(0, -2deg);
+  padding: 0;
+}
+.link-visit {
+  margin: 7px;
+  font-size: inherit;
+  background-color: rgba(142, 57, 153, 0.8);
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.link-visit:hover {
+  background-color: rgba(142, 57, 153, 1);
+  color: white;
+  transform: translateY(-0.2em);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
+}
+.link-visit:active {
+  background-color: rgba(142, 57, 153, 1) !important;
+  color: white !important;
+}
+.link-code {
+  margin: 7px;
+  font-size: inherit;
+  background-color: rgba(30, 115, 172, 0.8);
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.link-code:hover {
+  background-color: rgba(30, 115, 172, 1);
+  color: white;
+  transform: translateY(-0.2em);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
+}
+.link-code:active {
+  background-color: rgba(30, 115, 172, 1) !important;
+  color: white !important;
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  FLIP CARD FOR SMALLER DEVICES */
+/* ******************************************************************************************************************************** */
+
+@media (max-width: 991px) {
+  .flip-card {
+    /* pointer-events: none; */
+    padding: 0;
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: static;
+  }
+  .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front .card-body {
+    transform: skew(0, 2deg);
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
+  }
+  .flip-card-back .card-body {
+    border-top: solid rgba(0, 0, 0, 0.8) 2px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
+    padding: 0;
+  }
+  #flip-card-photography {
+    position: relative;
+    top: 300px;
+  }
+  #flip-card-todolist {
+    position: relative;
+    top: 600px;
+  }
+  #flip-card-bytesized {
+    position: relative;
+    top: 900px;
+  }
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  INDIVIDUAL PROJECT STYLES */
+/* ******************************************************************************************************************************** */
+
+/* Bytesized Book Reviews */
+.bytesized-reviews-front {
+  background-image: url("images/bytesized-reviews-zoom.png");
+}
+.bytesized-reviews-back {
+  padding-top: 2rem !important;
+}
+
+/* Photography Website */
+.photography-front {
+  background-image: url("images/photography.png");
+}
+
+/* To-Do List */
+.to-do-list-front {
+  background-image: url("images/to-do-list.png");
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  BIG BRAND LOGOS */
+/* ******************************************************************************************************************************** */
+
+@media (min-width: 1200px) {
+  .container-custom {
+    max-width: 1140px;
+  }
+}
+
+.brand-big {
+  padding: 1rem;
+}
+.img-brand-big {
+  width: 50%;
+  height: auto;
+  padding: 0;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+}
+.img-brand-big:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+#img-react-big {
+  width: 70%;
+}
+@media (max-width: 991px) {
+  .img-brand-big {
+    width: 80%;
+  }
+  #img-react-big {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .img-brand-big {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #col-html-big,
+  #col-css-big,
+  #col-js-big {
+    display: none;
+  }
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  TECHNOLOGIES LIST */
+/* ******************************************************************************************************************************** */
+
+#tech-list-banner {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  transform: skewY(-4deg);
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(142, 57, 153, 0.7),
+    rgba(30, 115, 172, 0.6)
+  );
+}
+#tech-list-row {
+  transform: skewY(4deg);
+}
+.tech-list-col {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.2s;
+}
+.tech-list-col img {
+  max-width: 25%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+.tech-list-col:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+.list-group-item {
+  color: #777;
+}
+#database-list {
+  padding-top: 20.545px;
+  padding-bottom: 20.545px;
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  FOOTER */
+/* ******************************************************************************************************************************** */
+
+.footer {
+  margin: 1rem;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  background-color: rgba(50, 50, 150, 0.5);
+}
+@media (max-width: 1399px) {
+  .footer {
+    margin: 0;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    margin-top: 100vh;
+  }
+}
+
+.footer-nav {
+  list-style-type: none;
+  border-top: solid white 2px;
+  padding: 1rem;
+}
+.github-link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.github-link:hover {
+  transform: rotate(5deg) scale(1.2);
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+.site-by {
+  color: white;
+}
