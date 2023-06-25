@@ -6,7 +6,6 @@ body {
   background-color: rgba(30, 115, 172, 0.15);
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
   font-family: "Montserrat", sans-serif;
-
   min-height: 100vh;
 }
 
@@ -128,8 +127,8 @@ h1 {
   background-size: cover;
   background-position: center;
   transform: skew(0, -2deg);
-  border: solid rgba(0, 0, 0, 0.8) 3px;
-  border-radius: 3px;
+  border: solid rgba(0, 0, 0, 0.8) 4px;
+  border-radius: 8px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
 }
 
@@ -152,7 +151,7 @@ h1 {
   justify-content: center;
   align-content: space-between;
   border: solid rgba(0, 0, 0, 0.65) 2px;
-  border-radius: 3px;
+  border-radius: 8px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
 }
 .brands {
@@ -207,51 +206,6 @@ h1 {
 }
 
 /* ******************************************************************************************************************************** */
-/* ***************************************************************************************  FLIP CARD FOR SMALLER DEVICES */
-/* ******************************************************************************************************************************** */
-
-@media (max-width: 991px) {
-  .flip-card {
-    /* pointer-events: none; */
-    padding: 0;
-  }
-  .flip-card-front,
-  .flip-card-back {
-    position: static;
-  }
-  .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front .card-body {
-    transform: skew(0, 2deg);
-    border-bottom: none;
-    border-radius: 3px 3px 0 0;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
-  }
-  .flip-card-back .card-body {
-    border-top: solid rgba(0, 0, 0, 0.8) 2px;
-    border-radius: 0 0 3px 3px;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
-    padding: 0;
-  }
-  #flip-card-bytesized {
-    margin-bottom: 300px;
-  }
-  #flip-card-photography {
-    margin-bottom: 300px;
-  }
-  #flip-card-todolist {
-    margin-bottom: 300px;
-  }
-  #flip-card-bytesized2 {
-    margin-bottom: 300px;
-  }
-}
-
-/* ******************************************************************************************************************************** */
 /* ***************************************************************************************  INDIVIDUAL PROJECT STYLES */
 /* ******************************************************************************************************************************** */
 
@@ -275,6 +229,77 @@ h1 {
 /* To-Do List */
 .to-do-list-front {
   background-image: url("images/to-do-list.png");
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  PROJECTS FOR SMALLER DEVICES */
+/* ******************************************************************************************************************************** */
+
+.projects-small-device {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .flip-card {
+    display: none;
+  }
+  .projects-small-device {
+    display: flex;
+  }
+  .phone {
+    display: flex;
+  }
+  .phone img {
+    /* display: block; */
+    border: 8px solid rgba(0, 0, 0, 0.85);
+    border-radius: 4vh;
+    width: 22vw;
+    box-shadow: 0.8rem 0.8rem 2rem black;
+  }
+  .links {
+    transform: none;
+  }
+  .link-visit,
+  .link-code {
+    font-size: 0.8rem;
+    width: 45%;
+  }
+  .link-visit {
+    margin-left: 0;
+  }
+  .link-code {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .phone img {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .phone {
+    margin-bottom: 4rem;
+  }
+  .phone img {
+    /* display: block; */
+    border: 7px solid rgba(0, 0, 0, 0.85);
+    border-radius: 3vh;
+    width: 50vw;
+    box-shadow: 0.8rem 0.8rem 2rem black;
+  }
+  .project-description p,
+  .project-description .links {
+    margin-bottom: 2vw !important;
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+  }
+
+  .site-by,
+  .github-link {
+    font-size: 0.7rem;
+  }
 }
 
 /* ******************************************************************************************************************************** */
