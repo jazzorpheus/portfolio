@@ -1,5 +1,5 @@
 /* ******************************************************************************************************************************** */
-/* ***************************************************************************************  BANNER */
+/* ***************************************************************************************  BANNER & HEADINGS */
 /* ******************************************************************************************************************************** */
 body {
   overflow-x: hidden;
@@ -68,6 +68,18 @@ h1 {
 }
 .link-projects:active {
   background-color: white !important;
+}
+
+.projects-title {
+  margin-bottom: 5vw;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #b04cbd, #258cd0);
+  background-image: linear-gradient(to right, #409fdd, #b04cbd);
+  /* background-image: linear-gradient(to right, #983da4, #258cd0); */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.3vw;
 }
 
 /* ******************************************************************************************************************************** */
@@ -273,12 +285,18 @@ h1 {
 }
 
 @media (max-width: 991px) {
+  .projects-title {
+    margin-bottom: 10vw;
+  }
   .phone img {
-    width: 30vw;
+    width: 23vw;
   }
 }
 
 @media (max-width: 767px) {
+  .projects-title {
+    margin-bottom: 15vw;
+  }
   .phone {
     margin-bottom: 4rem;
   }
@@ -286,7 +304,7 @@ h1 {
     /* display: block; */
     border: 7px solid rgba(0, 0, 0, 0.85);
     border-radius: 3vh;
-    width: 50vw;
+    width: 30vw;
     box-shadow: 0.8rem 0.8rem 2rem black;
   }
   .project-description p,
