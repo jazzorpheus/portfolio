@@ -296,6 +296,9 @@ h1 {
 @media (max-width: 767px) {
   .projects-title {
     margin-bottom: 15vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    letter-spacing: 1vw;
   }
   .phone {
     margin-bottom: 4rem;
@@ -439,4 +442,11 @@ h1 {
 }
 .site-by {
   color: white;
+}
+
+#one {
+  background-color: red;
+}
+#two {
+  background-color: yellow;
 }
