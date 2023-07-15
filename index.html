@@ -386,7 +386,7 @@
                       >
                       A full-stack, dynamic and responsive web application that
                       allows registered users to publish their own book reviews.
-                      Created principally using Node, Express, Bootstrap, and
+                      Created principally with Node, Express, Bootstrap, and
                       MongoDB. See markdown on GitHub for full details on
                       features.
                     </p>
@@ -417,13 +417,13 @@
 
         <div class="container-fluid projects-small-device mb-5">
           <!--  -->
-          <!-- Bytesized Book Reviews (TO BE) -->
+          <!-- Bytesized Book Reviews -->
 
           <div class="row d-flex justify-content-evenly align-items-center">
             <div
               class="col-10 col-md-4 d-flex justify-content-center p-0 phone"
             >
-              <img src="images/photography-mobile.png" alt="" />
+              <img src="images/bytesized-mobile-alt.png" alt="" />
             </div>
 
             <div
@@ -432,25 +432,27 @@
               <h2
                 class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
               >
-                Photography Website
+                Bytesized Book Reviews
               </h2>
               <p class="col-12 d-flex m-0 p-0 text-center">
-                A static personal photography website made with HTML, CSS, and
-                Bootstrap to demonstrate the potential of Bootstrap's grid
-                system in creating highly responsive pages.
+                A full-stack, dynamic and responsive web application that allows
+                registered users to publish their own book reviews. Created
+                principally with Node, Express, Bootstrap, and MongoDB. See
+                markdown on GitHub for full details on features. (Please allow
+                website time to load.)
               </p>
               <div
                 class="row justify-content-center align-items-end mt-2 mb-5 links"
               >
                 <a
                   class="col-4 btn link-visit rounded-5"
-                  href="https://jazzorpheus.github.io/photography/home.html"
+                  href="https://bytesized-book-reviews.onrender.com/"
                   target="_blank"
                   >Visit Website</a
                 >
                 <a
                   class="col-4 btn link-code rounded-5"
-                  href="https://github.com/jazzorpheus/photography"
+                  href="https://github.com/jazzorpheus/bytesized-reviews"
                   target="_blank"
                   >Source Code</a
                 >
@@ -587,7 +589,7 @@
       $(".link-projects").on("click", function () {
         $("html, body").animate(
           {
-            scrollTop: $(".projects-title").offset().top,
+            scrollTop: $(".projects-title").offset().top - 50,
           },
           50
         );

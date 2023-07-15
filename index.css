@@ -296,9 +296,9 @@ h1 {
 @media (max-width: 767px) {
   .projects-title {
     margin-bottom: 15vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    letter-spacing: 1vw;
+    /* margin-left: 15vw; */
+    /* margin-right: 15vw; */
+    /* letter-spacing: 1vw; */
   }
   .phone {
     margin-bottom: 4rem;
@@ -307,7 +307,7 @@ h1 {
     /* display: block; */
     border: 7px solid rgba(0, 0, 0, 0.85);
     border-radius: 3vh;
-    width: 30vw;
+    width: 50vw;
     box-shadow: 0.8rem 0.8rem 2rem black;
   }
   .project-description p,
@@ -421,11 +421,6 @@ h1 {
   padding-top: 1.5rem;
   background-color: rgba(50, 50, 150, 0.5);
 }
-/* @media (max-width: 991px) {
-  .footer {
-    display: none;
-  }
-} */
 .footer-nav {
   list-style-type: none;
   border-top: solid white 2px;
@@ -442,11 +437,4 @@ h1 {
 }
 .site-by {
   color: white;
-}
-
-#one {
-  background-color: red;
-}
-#two {
-  background-color: yellow;
 }
