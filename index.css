@@ -243,12 +243,12 @@ h1 {
   background-image: url("images/to-do-list.png");
 }
 
-/* CS50 Finance */
-.cs50-finance-front {
-  background-image: url("images/CS50Finance.png");
+/* Finance */
+.finance-front {
+  background-image: url("images/finance.png");
 }
 
-/* CS50 Speller */
+/* Speller */
 .cs50-speller-front {
   background-image: url("images/CS50Speller.png");
 }
