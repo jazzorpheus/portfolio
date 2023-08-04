@@ -244,7 +244,7 @@ h1 {
 }
 
 /* Finance */
-.finance-front {
+.card-body.finance-front {
   background-image: url("images/finance.png");
 }
 
