@@ -3,44 +3,56 @@
 /* ******************************************************************************************************************************** */
 body {
   overflow-x: hidden;
-  background-color: rgba(30, 115, 172, 0.15);
+  background-color: rgba(30, 115, 172, 0.2);
+  /* background-color: #0b132b; */
+  background-color: rgba(11, 19, 43, 1);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(30, 115, 172, 0.25),
+      rgba(142, 57, 153, 1)
+    ),
+    url(images/background2.jpg);
+  background-position: top;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 0.3);
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
+  z-index: 1;
 }
 
-header {
-  margin: 1rem;
-  height: 270px;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(30, 115, 172, 0.6),
-      rgba(142, 57, 153, 0.7)
-    ),
-    url(images/banner2.jpg);
-  background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-@media (max-width: 1399px) {
-  header {
-    margin: 0;
+@media (max-width: 1300px) {
+  body {
+    background-size: auto;
   }
 }
-@media (max-width: 350px) {
-  header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+#heading {
+  margin-top: 3vw;
+  padding: 3vw;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 1199px) {
+  #heading {
+    width: 75%;
   }
 }
-.logo {
-  height: 8%;
-  position: absolute;
+
+@media (max-width: 700px) {
+  #heading {
+    width: 100%;
+  }
 }
 
 h1 {
-  text-shadow: 0.2rem 0.3rem 0.1rem rgba(0, 0, 50, 0.8);
-  color: rgba(255, 255, 255, 0.8);
-  position: relative;
-  top: 25%;
+  text-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 50, 1);
+  color: white;
+  /* position: relative; */
+  /* top: 25%; */
+  /* font-weight: 700 !important; */
 }
 @media (max-width: 700px) {
   h1 {
@@ -49,12 +61,15 @@ h1 {
 }
 .link-projects {
   background-color: white;
-  color: rgba(50, 50, 50, 0.8);
-  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  /* position: relative; */
   top: 35%;
-  left: calc(50vw - 93.86px);
+  /* left: calc(50vw - 93.86px); */
   text-shadow: 0.06rem 0.07rem 0.02rem rgba(150, 180, 255, 1);
   transition: transform 0.2s;
+
+  width: 70vw;
+  max-width: 300px;
 }
 @media (max-width: 700px) {
   .link-projects {
@@ -73,13 +88,9 @@ h1 {
 .projects-title {
   margin-bottom: 5vw;
   font-weight: 700;
-  background-image: linear-gradient(to right, #b04cbd, #258cd0);
-  background-image: linear-gradient(to right, #409fdd, #b04cbd);
-  /* background-image: linear-gradient(to right, #983da4, #258cd0); */
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 0.3vw;
+  letter-spacing: 1.5vw;
+  color: white;
+  text-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 50, 1);
 }
 
 /* ******************************************************************************************************************************** */
@@ -102,7 +113,7 @@ h1 {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s ease-out;
+  transition: transform 0.55s ease-out;
   transform-style: preserve-3d;
 }
 
@@ -257,6 +268,10 @@ h1 {
 /* ***************************************************************************************  PROJECTS FOR SMALLER DEVICES */
 /* ******************************************************************************************************************************** */
 
+hr {
+  color: white;
+}
+
 .projects-small-device {
   display: none;
 }
@@ -320,6 +335,7 @@ h1 {
     width: 50vw;
     box-shadow: 0.8rem 0.8rem 2rem black;
   }
+
   .project-description p,
   .project-description .links {
     margin-bottom: 2vw !important;
@@ -333,24 +349,36 @@ h1 {
   }
 }
 
+.projects-small-device {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-description > h2,
+.project-description > p {
+  color: white;
+}
+
 /* ******************************************************************************************************************************** */
 /* ***************************************************************************************  BIG BRAND LOGOS */
 /* ******************************************************************************************************************************** */
 
-@media (min-width: 1200px) {
+@media (min-width: 1199px) {
   .container-custom {
     max-width: 1140px;
   }
 }
 
 .brand-big {
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .img-brand-big {
   width: 50%;
   height: auto;
   padding: 0;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0.02rem 0.02rem 0.1rem white);
 }
 .img-brand-big:hover {
   transform: scale(1.2);
@@ -392,7 +420,7 @@ h1 {
   margin-bottom: 8rem;
   background: linear-gradient(
     to right bottom,
-    rgba(142, 57, 153, 0.7),
+    rgba(142, 57, 153, 0.8),
     rgba(30, 115, 172, 0.6)
   );
 }
@@ -403,6 +431,12 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
   transition: transform 0.2s;
 }
+/* @media (max-width: 1200px) {
+  .tech-list-col {
+    max-width: 20%;
+    margin: 70px !important;
+  }
+} */
 .tech-list-col img {
   max-width: 25%;
   margin-top: 1rem;
@@ -419,6 +453,11 @@ h1 {
 #database-list {
   padding-top: 20.545px;
   padding-bottom: 20.545px;
+}
+
+li {
+  border: none !important;
+  background: none !important;
 }
 
 /* ******************************************************************************************************************************** */

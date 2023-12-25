@@ -21,17 +21,10 @@
     <title>JWR Portfolio</title>
   </head>
   <body>
-    <!-- ************************************************************************************************   HEADER -->
-    <header>
-      <img class="logo m-2" src="images/logo.png" alt="Logo" />
-      <h1 class="text-center m-0 display-4">James W. R. Portfolio</h1>
-      <button class="btn rounded-5 fs-5 link-projects">
-        <strong class="p-3">See Projects</strong>
-      </button>
-    </header>
-
-    <main class="container-fluid p-0">
-      <!-- ************************************************************************************************   BRANDS BIG -->
+    <main
+      class="container-fluid p-0 d-flex flex-column justify-content-center align-items-center"
+    >
+      <!-- ************************************************************************************************   BRANDS -->
 
       <section class="container-custom container-sm d-xl-block">
         <!-- *****************************************************************************   Front End -->
@@ -55,12 +48,14 @@
           >
             <img class="img-brand-big img-fluid" src="images/css3.png" alt="" />
           </div>
+
           <div
-            class="brand-big col-sm-2 col-3 d-flex align-items-center justify-content-center"
+            class="brand-big col-sm-3 col-5 d-flex align-items-center justify-content-center"
           >
             <img
+              id="img-react-big"
               class="img-brand-big img-fluid"
-              src="images/bootstrap5.jpeg"
+              src="images/react.png"
               alt=""
             />
           </div>
@@ -75,58 +70,24 @@
             />
           </div>
           <div
-            class="brand-big col-sm-3 col-5 d-flex align-items-center justify-content-center"
+            class="brand-big col-sm-2 col-3 d-flex align-items-center justify-content-center"
           >
             <img
-              id="img-react-big"
               class="img-brand-big img-fluid"
-              src="images/react.png"
+              src="images/bootstrap5.jpeg"
               alt=""
             />
           </div>
         </div>
-        <!-- *****************************************************************************   Back End -->
+        <!-- *****************************************************************************   Back End and Database -->
 
-        <div class="row d-flex justify-content-center align-items-center pb-5">
+        <div class="row d-flex justify-content-center align-items-center">
           <div
             class="brand-big col-sm-3 col-4 d-flex align-items-center justify-content-center"
           >
             <img
               class="img-brand-big img-fluid"
               src="images/node_long.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="brand-big col-4 d-flex align-items-center justify-content-center"
-          >
-            <img
-              class="img-brand-big img-fluid"
-              src="images/express.png"
-              alt=""
-            />
-          </div>
-          <div
-            class="brand-big col-sm-3 col-4 d-flex align-items-center justify-content-center"
-          >
-            <img
-              class="img-brand-big img-fluid"
-              src="images/flask.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <!-- *****************************************************************************   Database -->
-
-        <div
-          class="row d-flex justify-content-center align-items-center pb-5 mb-5"
-        >
-          <div
-            class="brand-big col-4 d-flex align-items-center justify-content-center"
-          >
-            <img
-              class="img-brand-big img-fluid"
-              src="images/cloudinary.png"
               alt=""
             />
           </div>
@@ -143,26 +104,40 @@
             class="brand-big col-4 d-flex align-items-center justify-content-center"
           >
             <img
-              class="img-brand-big img-fluid"
-              src="images/SQLite.png"
+              class="img-brand-big img-fluid img-brand-express"
+              src="images/express2.png"
               alt=""
             />
           </div>
         </div>
       </section>
 
+      <!-- ************************************************************************************************   TITLE -->
+      <div id="heading" class="d-flex flex-column flex-wrap align-items-center">
+        <h1 class="text-center m-0 display-4">James W. R. Portfolio</h1>
+        <p class="text-center text-white m-3">
+          An aspiring full-stack developer with a keen interest in all areas of
+          software. Always keen to collaborate on creative new projects with a
+          client-first approach and a philosophy to be continually learning new
+          things.
+        </p>
+        <button class="btn rounded-5 fs-5 link-projects">
+          <strong class="p-0">See Projects</strong>
+        </button>
+      </div>
+
       <!-- ************************************************************************************************   TECHNOLOGIES LIST -->
 
       <section
         id="tech-list-banner"
-        class="container-xxl d-flex justify-content-center align-items-center"
+        class="container-xxl d-flex justify-content-center align-items-center rounded-3"
       >
         <div
           id="tech-list-row"
           class="row d-flex justify-content-center align-items-center"
         >
           <div
-            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap"
+            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap rounded-3"
           >
             <img src="images/frontend.png" alt="front end icon" />
             <h4 class="pt-2 mb-4 w-100 text-center">FRONT END</h4>
@@ -174,7 +149,7 @@
             </ul>
           </div>
           <div
-            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap"
+            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap rounded-3"
           >
             <img src="images/backend.png" alt="back end icon" />
             <h4 class="pt-2 mb-4 w-100 text-center">BACK END</h4>
@@ -186,7 +161,7 @@
             </ul>
           </div>
           <div
-            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap"
+            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap rounded-3"
           >
             <img src="images/database.png" alt="database icon" />
             <h4 class="pt-2 mb-4 w-100 text-center">DATABASE</h4>
@@ -200,7 +175,7 @@
             </ul>
           </div>
           <div
-            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap"
+            class="tech-list-col col-xl-2 col-lg-4 col-md-4 col-sm-4 col-6 m-3 d-flex justify-content-center align-items-center flex-wrap rounded-3"
           >
             <img src="images/deployment.png" alt="deployment icon" />
             <h4 class="pt-2 mb-4 w-100 text-center">DEPLOYMENT</h4>
@@ -216,7 +191,7 @@
 
       <!-- ************************************************************************************************   PROJECTS -->
 
-      <h2 class="projects-title text-center display-4">Project Portfolio</h2>
+      <h2 class="projects-title text-center display-4">Projects</h2>
 
       <div id="projects" class="container-fluid">
         <!--  -->
@@ -462,7 +437,7 @@
         </div>
         <!-- END ROW 2 -->
 
-        <!-- PHONE DISPLAYS -->
+        <!-- ************************************************************************************************************   PHONE DISPLAYS -->
 
         <div class="container-fluid projects-small-device mb-5">
           <!--  -->
@@ -516,7 +491,7 @@
           <hr />
         </div>
         <!--  -->
-        <!-- Shopping Sist -->
+        <!-- Shopping List -->
         <!--  -->
         <div class="container-fluid projects-small-device mt-5">
           <div class="row d-flex justify-content-evenly align-items-center">
