@@ -24,17 +24,17 @@
     <main
       class="container-fluid p-0 d-flex flex-column justify-content-center align-items-center"
     >
-      <!-- ************************************************************************************************   BRANDS -->
+      <!-- **********************************************************************************************************************************************   BRAND LOGOS -->
 
       <section class="container-custom container-sm d-xl-block">
         <!-- *****************************************************************************   Front End -->
 
         <div
-          class="row d-flex justify-content-evenly align-items-center mt-5 py-5"
+          class="row d-flex justify-content-evenly align-items-center mt-5 pb-sm-5 pb-0"
         >
           <div
             id="col-html-big"
-            class="brand-big col-2 d-flex align-items-center justify-content-center d-sm-flex d-none"
+            class="brand-big col-2 d-flex align-items-center justify-content-center d-sm-flex order-0"
           >
             <img
               class="img-brand-big img-fluid"
@@ -44,13 +44,13 @@
           </div>
           <div
             id="col-css-big"
-            class="brand-big col-2 d-flex align-items-center justify-content-center d-sm-flex d-none"
+            class="brand-big col-2 d-flex align-items-center justify-content-center d-sm-flex order-1"
           >
             <img class="img-brand-big img-fluid" src="images/css3.png" alt="" />
           </div>
 
           <div
-            class="brand-big col-sm-3 col-5 d-flex align-items-center justify-content-center"
+            class="brand-big col-lg-4 col-sm-3 col-5 d-flex align-items-center justify-content-center order-sm-3 order-sm-2 order-5"
           >
             <img
               id="img-react-big"
@@ -61,7 +61,7 @@
           </div>
           <div
             id="col-js-big"
-            class="brand-big col-2 d-flex align-items-center justify-content-center d-sm-flex d-none"
+            class="brand-big col-2 d-flex align-items-center justify-content-center d-sm-flex order-3"
           >
             <img
               class="img-brand-big img-fluid"
@@ -70,7 +70,7 @@
             />
           </div>
           <div
-            class="brand-big col-sm-2 col-3 d-flex align-items-center justify-content-center"
+            class="brand-big col-sm-2 col-2 d-flex align-items-center justify-content-center order-4"
           >
             <img
               class="img-brand-big img-fluid"
@@ -79,24 +79,26 @@
             />
           </div>
         </div>
-        <!-- *****************************************************************************   Back End and Database -->
+        <!-- *****************************************************************************   Back End & Database -->
 
-        <div class="row d-flex justify-content-center align-items-center">
-          <div
-            class="brand-big col-sm-3 col-4 d-flex align-items-center justify-content-center"
-          >
-            <img
-              class="img-brand-big img-fluid"
-              src="images/node_long.png"
-              alt=""
-            />
-          </div>
+        <div
+          class="row d-flex flex-wrap justify-content-center align-items-center mb-5"
+        >
           <div
             class="brand-big col-4 d-flex align-items-center justify-content-center"
           >
             <img
               class="img-brand-big img-fluid"
               src="images/mongodb.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="brand-big col-lg-4 col-3 d-flex align-items-center justify-content-center"
+          >
+            <img
+              class="img-brand-big img-fluid"
+              src="images/node_long.png"
               alt=""
             />
           </div>
@@ -112,21 +114,20 @@
         </div>
       </section>
 
-      <!-- ************************************************************************************************   TITLE -->
-      <div id="heading" class="d-flex flex-column flex-wrap align-items-center">
+      <!-- ************************************************************************************************************************************************   PAGE HEADING / TITLE -->
+      <div id="heading" class="d-flex flex-column align-items-center">
         <h1 class="text-center m-0 display-4">James W. R. Portfolio</h1>
         <p class="text-center text-white m-3">
           An aspiring full-stack developer with a keen interest in all areas of
-          software. Always keen to collaborate on creative new projects with a
-          client-first approach and a philosophy to be continually learning new
-          things.
+          software. Always open to collaborating on creative new projects with a
+          client-first approach and a philosophy to be continually learning.
         </p>
         <button class="btn rounded-5 fs-5 link-projects">
           <strong class="p-0">See Projects</strong>
         </button>
       </div>
 
-      <!-- ************************************************************************************************   TECHNOLOGIES LIST -->
+      <!-- *************************************************************************************************************************************************   TECHNOLOGIES LIST -->
 
       <section
         id="tech-list-banner"
@@ -189,22 +190,20 @@
         </div>
       </section>
 
-      <!-- ************************************************************************************************   PROJECTS -->
+      <!-- ******************************************************************************************************************************************   PROJECTS -->
 
       <h2 class="projects-title text-center display-4">Projects</h2>
 
-      <div id="projects" class="container-fluid">
-        <!--  -->
-        <!--  -->
-        <!-- ROW 1 -->
-        <!--  -->
-        <div class="row d-flex justify-content-center align-items-center">
+      <div class="container-fluid">
+        <!-- **********************************************************************************************************************************   WIDESCREEN -->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
           <!--  -->
           <!-- Bytesized Book Reviews -->
           <!--  -->
           <div
-            id="flip-card-bytesized"
-            class="col-xxl-4 col-xl-6 col-12 d-flex justify-content-center align-items-center p-0"
+            class="col-10 d-flex justify-content-center align-items-center p-0"
           >
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -214,32 +213,105 @@
 
                 <div class="card flip-card-back">
                   <div
-                    class="row d-flex justify-content-center align-items-center m-0 card-body bytesized-reviews-back"
+                    class="row d-flex justify-content-center align-items-center m-5 card-body"
                   >
-                    <p class="col-10 mb-2 proj-p">
-                      <strong class="mb-2"
-                        >Bytesized Book Reviews <br />
-                        (Please allow website time to load)</strong
-                      >
-                      A full-stack, dynamic and responsive web application that
-                      allows registered users to publish their own book reviews.
-                      Created principally with Node, Express, Bootstrap, and
-                      MongoDB. See markdown on GitHub for video demo.
-                    </p>
+                    <div
+                      class="col-4 d-flex justify-content-center mt-3 mb-5 me-5 phone-wide"
+                    >
+                      <img src="images/bytesized-mobile-alt.png" alt="" />
+                    </div>
 
-                    <div class="row justify-content-center mb-5 links">
-                      <a
-                        class="col-4 btn link-visit rounded-5"
-                        href="https://bytesized-book-reviews-f7646a733018.herokuapp.com/"
-                        target="_blank"
-                        >Visit Website</a
+                    <div
+                      class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center ms-5 p-0 project-description"
+                    >
+                      <h2
+                        class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
+                      >
+                        Bytesized Book Reviews
+                      </h2>
+                      <p class="col-12 d-flex m-0 p-0 text-center">
+                        A full-stack, dynamic and responsive web application
+                        that allows registered users to publish their own book
+                        reviews. Created principally with Node, Express,
+                        Bootstrap, and MongoDB. See markdown on GitHub for a
+                        video demo and full details on features.
+                      </p>
+                      <div
+                        class="row justify-content-center align-items-end mt-2 mb-5 links"
                       >
                       <a
-                        class="col-4 btn link-code rounded-5"
+                        class="col-4 btn link-code-wide rounded-5 mt-3 me-2"
                         href="https://github.com/jazzorpheus/bytesized-reviews"
                         target="_blank"
                         >Source Code</a
                       >
+                        <a
+                          class="col-4 btn link-visit-wide rounded-5 mt-3 ms-2"
+                          href="https://bytesized-book-reviews-f7646a733018.herokuapp.com/"
+                          target="_blank"
+                          >Visit Website</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- Stock Trader -->
+          <!--  -->
+          <div
+            class="col-10 d-flex justify-content-center align-items-center p-0"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="card flip-card-front">
+                  <div class="card-body finance-front"></div>
+                </div>
+
+                <div class="card flip-card-back">
+                  <div
+                    class="row d-flex justify-content-center align-items-center m-5 card-body"
+                  >
+                    <div
+                      class="col-4 d-flex justify-content-center mt-3 mb-5 ms-5 order-1 phone-wide"
+                    >
+                      <img src="images/finance-mobile.png" alt="" />
+                    </div>
+
+                    <div
+                      class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center me-5 p-0 order-0 project-description"
+                    >
+                      <h2
+                        class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
+                      >
+                        Stock Trader App
+                      </h2>
+                      <p class="col-12 d-flex m-0 p-0 text-center">
+                        A web app created with the Flask framework together with
+                        a SQL database where users can 'purchase' and 'sell'
+                        stocks based on real-time data pulled from the IEX
+                        Exchange via the IEX Cloud API. This project was part of
+                        an assignment for HarvardX's CS50 course. See markdown
+                        on GitHub for more details.
+                      </p>
+                      <div
+                        class="row justify-content-center align-items-end mt-2 mb-5 links"
+                      >
+                      <a
+                        class="col-4 btn link-code-wide rounded-5 mt-3 me-2"
+                        href="https://github.com/jazzorpheus/mock-trader"
+                        target="_blank"
+                        >Source Code</a
+                      >
+                        <a
+                          class="col-4 btn link-visit-wide rounded-5 mt-3 ms-2"
+                          href="https://youtu.be/uEFdlHU87Ik"
+                          target="_blank"
+                          >Video Demo</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -250,8 +322,7 @@
           <!-- Shopping List -->
           <!--  -->
           <div
-            id="flip-card-todolist"
-            class="col-xxl-4 col-xl-6 col-12 d-flex justify-content-center align-items-center p-0"
+            class="col-10 d-flex justify-content-center align-items-center p-0"
           >
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -261,33 +332,45 @@
 
                 <div class="card flip-card-back">
                   <div
-                    class="row d-flex justify-content-center align-items-center pt-4 m-0 card-body"
+                    class="row d-flex justify-content-center align-items-center m-5 card-body"
                   >
-                    <p class="col-10 mb-2 proj-p">
-                      <strong class="mb-2"
-                        >React Shopping List <br />
-                        (Under development)</strong
-                      >
-                      A shopping/groceries list web app made with React and
-                      Material UI that allows the user to create, check off, and
-                      delete shopping list items grouped by category. The user
-                      can optionally input product prices and quantites which
-                      the app keeps track of and renders total costs.
-                    </p>
+                    <div
+                      class="col-4 d-flex justify-content-center mt-3 mb-5 me-5 phone-wide"
+                    >
+                      <img src="images/shopping-list-mobile.png" alt="" />
+                    </div>
 
-                    <div class="row justify-content-center mt-1 mb-5 links">
-                      <a
-                        class="col-4 btn link-visit rounded-5"
-                        href="https://jazzorpheus.github.io/shopping-list/"
-                        target="_blank"
-                        >Visit Website</a
+                    <div
+                      class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center ms-5 p-0 project-description"
+                    >
+                      <h2
+                        class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
+                      >
+                        React Shopping List
+                      </h2>
+                      <p class="col-12 d-flex m-0 p-0 text-center">
+                        A shopping/groceries list web app made with React and
+                        Material UI that allows the user to create, check off,
+                        and delete shopping list items grouped by category. The
+                        user can optionally input product prices and quantites
+                        which the app keeps track of and renders total costs.
+                      </p>
+                      <div
+                        class="row justify-content-center align-items-end mt-2 mb-5 links"
                       >
                       <a
-                        class="col-4 btn link-code rounded-5"
+                        class="col-4 btn link-code-wide rounded-5 mt-3 me-2"
                         href="https://github.com/jazzorpheus/shopping-list"
                         target="_blank"
                         >Source Code</a
                       >
+                        <a
+                          class="col-4 btn link-visit-wide rounded-5 mt-3 ms-2"
+                          href="https://jazzorpheus.github.io/shopping-list/"
+                          target="_blank"
+                          >Try App</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -298,8 +381,7 @@
           <!-- Photography Website -->
           <!--  -->
           <div
-            id="flip-card-photography"
-            class="col-xxl-4 col-xl-6 col-12 d-flex justify-content-center align-items-center p-0"
+            class="col-10 d-flex justify-content-center align-items-center p-0"
           >
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -309,84 +391,44 @@
 
                 <div class="card flip-card-back">
                   <div
-                    class="row d-flex justify-content-center align-items-center pt-5 m-0 card-body"
+                    class="row d-flex justify-content-center align-items-center m-5 card-body"
                   >
-                    <p class="col-10 mb-3 proj-p">
-                      <strong class="mb-4">Photography Website</strong>
-                      A static personal photography website made with HTML, CSS,
-                      and Bootstrap to demonstrate the potential of Bootstrap's
-                      grid system in creating highly responsive pages.
-                    </p>
+                    <div
+                      class="col-4 d-flex justify-content-center mt-3 mb-5 ms-5 order-1 phone-wide"
+                    >
+                      <img src="images/photography-mobile.png" alt="" />
+                    </div>
 
                     <div
-                      class="row justify-content-center align-items-end mt-2 mb-5 links"
+                      class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center me-5 p-0 order-0 project-description"
                     >
-                      <a
-                        class="col-4 btn link-visit rounded-5"
-                        href="https://jazzorpheus.github.io/photography/home.html"
-                        target="_blank"
-                        >Visit Website</a
+                      <h2
+                        class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
+                      >
+                        Photography Website
+                      </h2>
+                      <p class="col-12 d-flex m-0 p-0 text-center">
+                        A static personal photography website made with HTML,
+                        CSS, and Bootstrap to demonstrate the potential of
+                        Bootstrap's grid system in creating highly responsive
+                        pages.
+                      </p>
+                      <div
+                        class="row justify-content-center align-items-end mt-2 mb-5 links"
                       >
                       <a
-                        class="col-4 btn link-code rounded-5"
+                        class="col-4 btn link-code-wide rounded-5 mt-3 me-2"
                         href="https://github.com/jazzorpheus/photography"
                         target="_blank"
                         >Source Code</a
                       >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END ROW 1 -->
-
-        <br />
-        <br />
-
-        <!-- START ROW 2 -->
-        <div class="row d-flex justify-content-center align-items-center">
-          <!--  -->
-          <!-- Stock Trader -->
-          <!--  -->
-          <div
-            id="flip-card-finance"
-            class="col-xl-6 col-12 d-flex justify-content-xxl-end justify-content-center align-items-center p-0"
-          >
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="card flip-card-front">
-                  <div class="card-body finance-front"></div>
-                </div>
-
-                <div class="card flip-card-back">
-                  <div
-                    class="row d-flex justify-content-center align-items-center m-0 card-body finance-back"
-                  >
-                    <p class="col-10 mt-2 mb-2 proj-p">
-                      <strong class="mb-2">Stock Trader App</strong>
-                      A web app created with the Flask framework together with a
-                      SQL database where users can 'purchase' and 'sell' stocks
-                      based on real-time data pulled from the IEX Exchange via
-                      the IEX Cloud API. This project was part of an assignment
-                      for HarvardX's CS50 course. See markdown on GitHub for
-                      more details.
-                    </p>
-
-                    <div class="row justify-content-center mb-5 links">
-                      <a
-                        class="col-4 btn link-visit rounded-5"
-                        href="https://youtu.be/uEFdlHU87Ik"
-                        target="_blank"
-                        >Video Demo</a
-                      >
-                      <a
-                        class="col-4 btn link-code rounded-5"
-                        href="https://github.com/jazzorpheus/mock-trader"
-                        target="_blank"
-                        >Source Code</a
-                      >
+                        <a
+                          class="col-4 btn link-visit-wide rounded-5 mt-3 ms-2"
+                          href="https://jazzorpheus.github.io/photography/home.html"
+                          target="_blank"
+                          >Visit Website</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -397,8 +439,7 @@
           <!-- Spellchecker -->
           <!--  -->
           <div
-            id="flip-card-speller"
-            class="col-xl-6 col-12 d-flex justify-content-center align-items-center p-0"
+            class="col-10 d-flex justify-content-center align-items-center p-0"
           >
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -408,74 +449,81 @@
 
                 <div class="card flip-card-back">
                   <div
-                    class="row d-flex justify-content-center align-items-center m-0 card-body cs50-speller-back"
+                    class="row d-flex justify-content-center align-items-center m-5 card-body"
                   >
-                    <p class="col-10 mb-2 proj-p">
-                      <strong class="mb-2">Spellchecker</strong>
-                      A command-line application written in C that enables users
-                      to spellcheck .txt files. The output includes a list of
-                      misspelled words plus stats on the time taken to execute
-                      various parts of the program. The primary purpose of the
-                      project was to investigate the pros and cons of loading
-                      the dictionary into memory using varying data structures
-                      and programming methods.
-                    </p>
+                    <div
+                      class="col-4 d-flex justify-content-center mt-3 mb-5 me-5 phone-wide"
+                    >
+                      <img src="images/CS50Speller-mobile.png" alt="" />
+                    </div>
 
-                    <div class="row justify-content-center mb-5 links">
-                      <a
-                        class="col-4 btn link-code rounded-5"
-                        href="https://github.com/jazzorpheus/speller"
-                        target="_blank"
-                        >Source Code</a
+                    <div
+                      class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center ms-5 p-0 project-description"
+                    >
+                      <h2
+                        class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
                       >
+                        Spellchecker
+                      </h2>
+                      <p class="col-12 d-flex m-0 p-0 text-center">
+                        A command-line application written in C that enables
+                        users to spellcheck .txt files. The output includes a
+                        list of misspelled words plus stats on the time taken to
+                        execute various parts of the program. The primary
+                        purpose of the project was to investigate appropriate
+                        data structures for loading the dictionary into memory,
+                        e.g. hash tables.
+                      </p>
+                      <div
+                        class="row justify-content-center align-items-end mt-2 mb-5 links"
+                      >
+                        <a
+                          class="col-4 btn link-code-wide rounded-5 mt-3 ms-2"
+                          href="https://github.com/jazzorpheus/speller"
+                          target="_blank"
+                          >Source Code</a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- END ROW 2 -->
 
-        <!-- ************************************************************************************************************   PHONE DISPLAYS -->
+        <!-- **********************************************************************************************************************************   NARROWSCREEN -->
 
-        <div class="container-fluid projects-small-device mb-5">
-          <!--  -->
-          <!-- Bytesized Book Reviews -->
-          <!--  -->
-          <div class="row d-flex justify-content-evenly align-items-center">
+        <!--  -->
+        <!-- Bytesized Book Reviews -->
+        <!--  -->
+        <div class="container-fluid projects-small-device">
+          <div class="row d-flex justify-content-center align-items-center">
             <div
-              class="col-10 col-md-4 d-flex justify-content-center p-0 phone"
+              class="col-12 col-md-6 d-flex justify-content-center p-0 phone-narrow"
             >
               <img src="images/bytesized-mobile-alt.png" alt="" />
             </div>
 
             <div
-              class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center p-0 project-description"
+              class="col-10 col-sm-8 col-md-4 d-flex flex-wrap justify-content-center align-items-center p-0 m-0 project-description"
             >
-              <h2
-                class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
-              >
-                Bytesized Book Reviews
-              </h2>
-              <p class="col-12 d-flex m-0 p-0 text-center">
+              <h2 class="text-center mb-4 p-0">Bytesized Book Reviews</h2>
+              <p class="text-center">
                 A full-stack, dynamic and responsive web application that allows
                 registered users to publish their own book reviews. Created
                 principally with Node, Express, Bootstrap, and MongoDB. See
                 markdown on GitHub for a video demo and full details on
                 features.
               </p>
-              <div
-                class="row justify-content-center align-items-end mt-2 mb-5 links"
-              >
+              <div class="row d-flex flex-nowrap mt-2 mb-4 links">
                 <a
-                  class="col-4 btn link-visit rounded-5"
+                  class="col-5 btn link-visit-narrow rounded-5 me-2"
                   href="https://bytesized-book-reviews-f7646a733018.herokuapp.com/"
                   target="_blank"
                   >Visit Website</a
                 >
                 <a
-                  class="col-4 btn link-code rounded-5"
+                  class="col-5 btn link-code-narrow rounded-5 ms-2"
                   href="https://github.com/jazzorpheus/bytesized-reviews"
                   target="_blank"
                   >Source Code</a
@@ -496,7 +544,7 @@
         <div class="container-fluid projects-small-device mt-5">
           <div class="row d-flex justify-content-evenly align-items-center">
             <div
-              class="col-10 col-md-4 order-md-2 d-flex justify-content-center p-0 phone"
+              class="col-10 col-md-4 order-md-2 d-flex justify-content-center p-0 phone-narrow"
             >
               <img src="images/shopping-list-mobile.png" alt="" />
             </div>
@@ -549,7 +597,7 @@
           <!--  -->
           <div class="row d-flex justify-content-evenly align-items-center">
             <div
-              class="col-10 col-md-4 d-flex justify-content-center p-0 phone"
+              class="col-10 col-md-4 d-flex justify-content-center p-0 phone-narrow"
             >
               <img src="images/photography-mobile.png" alt="" />
             </div>
@@ -599,7 +647,7 @@
           <!--  -->
           <div class="row d-flex justify-content-evenly align-items-center">
             <div
-              class="col-10 col-md-4 order-md-2 d-flex justify-content-center p-0 phone"
+              class="col-10 col-md-4 order-md-2 d-flex justify-content-center p-0 phone-narrow"
             >
               <img src="images/finance-mobile.png" alt="" />
             </div>
@@ -651,7 +699,7 @@
           <!--  -->
           <div class="row d-flex justify-content-evenly align-items-center">
             <div
-              class="col-10 col-md-4 d-flex justify-content-center p-0 phone"
+              class="col-10 col-md-4 d-flex justify-content-center p-0 phone-narrow"
             >
               <img src="images/CS50Speller-mobile.png" alt="" />
             </div>
@@ -685,11 +733,10 @@
             </div>
           </div>
         </div>
-
-        <!-- END PHONE DISPLAYS -->
       </div>
     </main>
 
+    <!-- ***************************************************************************************************************************************************  FOOTER -->
     <footer class="footer container-fluid">
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-6 d-flex justify-content-center">

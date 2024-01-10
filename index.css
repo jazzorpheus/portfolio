@@ -1,4 +1,33 @@
 /* ******************************************************************************************************************************** */
+/* ***************************************************************************************  BIG BRAND LOGOS */
+/* ******************************************************************************************************************************** */
+
+.img-brand-big {
+  width: 50%;
+  filter: drop-shadow(0.02rem 0.02rem 0.1rem white);
+}
+.img-brand-big:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+#img-react-big {
+  width: 70%;
+}
+@media (max-width: 991px) {
+  .img-brand-big {
+    width: 80%;
+  }
+  #img-react-big {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .img-brand-big {
+    width: 100%;
+  }
+}
+
+/* ******************************************************************************************************************************** */
 /* ***************************************************************************************  BANNER & HEADINGS */
 /* ******************************************************************************************************************************** */
 body {
@@ -94,18 +123,64 @@ h1 {
 }
 
 /* ******************************************************************************************************************************** */
-/* ***************************************************************************************  FLIP CARDS BASIC */
+/* ***************************************************************************************  TECHNOLOGIES LIST */
+/* ******************************************************************************************************************************** */
+
+#tech-list-banner {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  transform: skewY(-4deg);
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(142, 57, 153, 0.8),
+    rgba(30, 115, 172, 0.6)
+  );
+}
+#tech-list-row {
+  transform: skewY(4deg);
+}
+.tech-list-col {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.2s;
+}
+.tech-list-col img {
+  max-width: 25%;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+.tech-list-col:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+.list-group-item {
+  color: #777;
+}
+#database-list {
+  padding-top: 20.545px;
+  padding-bottom: 20.545px;
+}
+
+li {
+  border: none !important;
+  background: none !important;
+}
+
+/* ******************************************************************************************************************************** */
+/* ***************************************************************************************  FLIP CARD BASIC */
 /* ******************************************************************************************************************************** */
 
 .flip-card {
   background-color: transparent;
-  width: 30rem;
-  height: 18rem;
+  width: 70rem;
+  height: 35rem;
   margin: 2rem;
-  perspective: 2000px; /* 3D effect */
+  perspective: 2500px; /* 3D effect */
   margin-bottom: 50px;
-  font-size: 0.9rem;
-  display: inline-block;
+  font-size: 1rem;
+  /* display: inline-block; */
 }
 
 .flip-card-inner {
@@ -113,7 +188,7 @@ h1 {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.55s ease-out;
+  transition: transform 0.8s ease-out;
   transform-style: preserve-3d;
 }
 
@@ -128,7 +203,7 @@ h1 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  background-color: rgba(30, 115, 172, 0);
+  background: transparent;
 }
 
 .flip-card-front {
@@ -137,7 +212,9 @@ h1 {
 
 .flip-card-back {
   transform: rotateY(180deg);
+  top: -3rem;
   border: none;
+  height: 41rem;
 }
 
 /* ******************************************************************************************************************************** */
@@ -149,7 +226,6 @@ h1 {
   height: 100%;
   background-size: cover;
   background-position: center;
-  transform: skew(0, -2deg);
   border: solid rgba(0, 0, 0, 0.8) 4px;
   border-radius: 8px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
@@ -158,90 +234,80 @@ h1 {
 .flip-card-back .card-body {
   width: 100%;
   height: 100%;
-  padding-top: 2.5%;
-  padding-bottom: 7%;
-  transform: skew(0, 2deg);
   background-image: linear-gradient(
       to right bottom,
-      rgba(30, 115, 172, 0.6),
-      rgba(142, 57, 153, 0.7)
+      rgba(142, 57, 153, 0.95),
+      rgba(30, 115, 172, 0.6)
     ),
     url(images/banner2.jpg);
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
   border: solid rgba(0, 0, 0, 0.65) 2px;
   border-radius: 8px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.85);
 }
-.brands {
-  transform: skew(0, -2deg);
-}
-.proj-p {
-  color: white;
-  transform: skew(0, -2deg);
-  margin: 0;
-  padding: 0;
-}
-.proj-p strong {
-  display: block;
-}
-.links {
-  transform: skew(0, -2deg);
-  padding: 0;
-}
-.link-visit {
-  margin: 7px;
+.link-visit-wide {
   font-size: inherit;
   background-color: rgba(142, 57, 153, 0.8);
   color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.link-visit:hover {
+.link-visit-wide:hover {
   background-color: rgba(142, 57, 153, 1);
   color: white;
   transform: translateY(-0.2em);
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
 }
-.link-visit:active {
+.link-visit-wide:active {
   background-color: rgba(142, 57, 153, 1) !important;
   color: white !important;
 }
-.link-code {
-  margin: 7px;
+.link-code-wide {
   font-size: inherit;
   background-color: rgba(30, 115, 172, 0.8);
   color: white;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
-.link-code:hover {
+.link-code-wide:hover {
   background-color: rgba(30, 115, 172, 1);
   color: white;
   transform: translateY(-0.2em);
   box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
 }
-.link-code:active {
+.link-code-wide:active {
   background-color: rgba(30, 115, 172, 1) !important;
   color: white !important;
+}
+
+.phone-wide img {
+  border: 8px solid rgba(0, 0, 0, 0.85);
+  border-radius: 4vh;
+  width: 70%;
+  min-width: 220px;
+  box-shadow: 0.8rem 0.8rem 2rem black;
+}
+.links {
+  transform: none;
+}
+.link-visit-wide,
+.link-code-wide {
+  font-size: 0.8rem;
+  width: 45%;
+}
+.link-visit-wide {
+  margin-left: 0;
+}
+.link-code-wide {
+  margin-right: 0;
 }
 
 /* ******************************************************************************************************************************** */
 /* ***************************************************************************************  INDIVIDUAL PROJECT STYLES */
 /* ******************************************************************************************************************************** */
 
-#projects {
-  position: relative;
-}
-
 /* Bytesized Book Reviews */
 .bytesized-reviews-front {
   background-image: url("images/bytesized-reviews-zoom.png");
-}
-.bytesized-reviews-back {
-  padding-top: 2rem !important;
 }
 
 /* Photography Website */
@@ -257,6 +323,7 @@ h1 {
 /* Finance */
 .card-body.finance-front {
   background-image: url("images/finance.png");
+  background-position: top;
 }
 
 /* Speller */
@@ -283,11 +350,7 @@ hr {
   .projects-small-device {
     display: flex;
   }
-  .phone {
-    display: flex;
-  }
-  .phone img {
-    /* display: block; */
+  .phone-narrow img {
     border: 8px solid rgba(0, 0, 0, 0.85);
     border-radius: 4vh;
     width: 22vw;
@@ -296,16 +359,48 @@ hr {
   .links {
     transform: none;
   }
-  .link-visit,
-  .link-code {
-    font-size: 0.8rem;
-    width: 45%;
+  .link-visit-narrow,
+  .link-code-narrow {
+    font-size: 0.8rem !important;
+    width: 50%;
   }
-  .link-visit {
+  .link-visit-narrow {
     margin-left: 0;
   }
-  .link-code {
+  .link-code-narrow {
     margin-right: 0;
+  }
+  .link-visit-narrow {
+    font-size: inherit;
+    background-color: rgba(142, 57, 153, 0.8);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  .link-visit-narrow:hover {
+    background-color: rgba(142, 57, 153, 1);
+    color: white;
+    transform: translateY(-0.2em);
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
+  }
+  .link-visit-narrow:active {
+    background-color: rgba(142, 57, 153, 1) !important;
+    color: white !important;
+  }
+  .link-code-narrow {
+    font-size: inherit;
+    background-color: rgba(30, 115, 172, 0.8);
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+  .link-code-narrow:hover {
+    background-color: rgba(30, 115, 172, 1);
+    color: white;
+    transform: translateY(-0.2em);
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(255, 255, 255, 0.5);
+  }
+  .link-code-narrow:active {
+    background-color: rgba(30, 115, 172, 1) !important;
+    color: white !important;
   }
 }
 
@@ -313,7 +408,7 @@ hr {
   .projects-title {
     margin-bottom: 10vw;
   }
-  .phone img {
+  .phone-narrow img {
     width: 23vw;
   }
 }
@@ -325,23 +420,24 @@ hr {
     /* margin-right: 15vw; */
     /* letter-spacing: 1vw; */
   }
-  .phone {
+  .phone-narrow {
     margin-bottom: 4rem;
   }
-  .phone img {
+  .phone-narrow img {
     /* display: block; */
     border: 7px solid rgba(0, 0, 0, 0.85);
     border-radius: 3vh;
     width: 50vw;
+    max-width: 300px;
     box-shadow: 0.8rem 0.8rem 2rem black;
   }
 
-  .project-description p,
+  /* .project-description p,
   .project-description .links {
     margin-bottom: 2vw !important;
     margin-left: 5vw !important;
     margin-right: 5vw !important;
-  }
+  } */
 
   .site-by,
   .github-link {
@@ -359,105 +455,6 @@ hr {
 .project-description > h2,
 .project-description > p {
   color: white;
-}
-
-/* ******************************************************************************************************************************** */
-/* ***************************************************************************************  BIG BRAND LOGOS */
-/* ******************************************************************************************************************************** */
-
-@media (min-width: 1199px) {
-  .container-custom {
-    max-width: 1140px;
-  }
-}
-
-.brand-big {
-  /* padding: 1rem; */
-}
-.img-brand-big {
-  width: 50%;
-  height: auto;
-  padding: 0;
-  filter: drop-shadow(0.02rem 0.02rem 0.1rem white);
-}
-.img-brand-big:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
-}
-#img-react-big {
-  width: 70%;
-}
-@media (max-width: 991px) {
-  .img-brand-big {
-    width: 80%;
-  }
-  #img-react-big {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .img-brand-big {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  #col-html-big,
-  #col-css-big,
-  #col-js-big {
-    display: none;
-  }
-}
-
-/* ******************************************************************************************************************************** */
-/* ***************************************************************************************  TECHNOLOGIES LIST */
-/* ******************************************************************************************************************************** */
-
-#tech-list-banner {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  transform: skewY(-4deg);
-  margin-top: 5rem;
-  margin-bottom: 8rem;
-  background: linear-gradient(
-    to right bottom,
-    rgba(142, 57, 153, 0.8),
-    rgba(30, 115, 172, 0.6)
-  );
-}
-#tech-list-row {
-  transform: skewY(4deg);
-}
-.tech-list-col {
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: transform 0.2s;
-}
-/* @media (max-width: 1200px) {
-  .tech-list-col {
-    max-width: 20%;
-    margin: 70px !important;
-  }
-} */
-.tech-list-col img {
-  max-width: 25%;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.7;
-}
-.tech-list-col:hover {
-  transform: translateY(-0.5em);
-  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
-}
-.list-group-item {
-  color: #777;
-}
-#database-list {
-  padding-top: 20.545px;
-  padding-bottom: 20.545px;
-}
-
-li {
-  border: none !important;
-  background: none !important;
 }
 
 /* ******************************************************************************************************************************** */
