@@ -82,7 +82,7 @@
         <!-- *****************************************************************************   Back End & Database -->
 
         <div
-          class="row d-flex flex-wrap justify-content-center align-items-center mb-5"
+          class="row d-flex flex-wrap justify-content-center align-items-center"
         >
           <div
             class="brand-big col-4 d-flex align-items-center justify-content-center"
@@ -116,14 +116,14 @@
 
       <!-- ************************************************************************************************************************************************   PAGE HEADING / TITLE -->
       <div id="heading" class="d-flex flex-column align-items-center">
-        <h1 class="text-center m-0 display-4">James W. R. Portfolio</h1>
-        <p class="text-center text-white m-3">
-          An aspiring full-stack developer with a keen interest in all areas of
+        <h1 class="text-center m-0 display-5">James W. R. Portfolio</h1>
+        <p class="text-center text-white m-3 fs-4 intro-text">
+          An aspiring <span class="emphasise-text">full-stack</span> developer  with a keen interest in all areas of
           software. Always open to collaborating on creative new projects with a
-          client-first approach and a philosophy to be continually learning.
+          <span class="emphasise-text">client-first</span> approach and a philosophy to be continually learning.
         </p>
-        <button class="btn rounded-5 fs-5 link-projects">
-          <strong class="p-0">See Projects</strong>
+        <button class="btn rounded-5 link-projects">
+          <strong class="p-5 fs-4">See Projects</strong>
         </button>
       </div>
 
@@ -181,10 +181,11 @@
             <img src="images/deployment.png" alt="deployment icon" />
             <h4 class="pt-2 mb-4 w-100 text-center">DEPLOYMENT</h4>
             <ul class="list-group list-group-flush text-center mb-2">
-              <li class="list-group-item">Cyclic</li>
+              
               <li class="list-group-item">GitHub Pages</li>
               <li class="list-group-item">Heroku</li>
               <li class="list-group-item">Render</li>
+              <li class="list-group-item">Vercel</li>
             </ul>
           </div>
         </div>
@@ -199,6 +200,67 @@
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
+          <!--  -->
+          <!-- WEATHER APP WIDESCREEN -->
+          <!--  -->
+          <div
+            class="col-10 d-flex justify-content-center align-items-center p-0"
+          >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="card flip-card-front">
+                  <div class="card-body weather-front"></div>
+                </div>
+
+                <div class="card flip-card-back">
+                  <div
+                    class="row d-flex justify-content-center align-items-center m-5 card-body"
+                  >
+                    <div
+                      class="col-4 d-flex justify-content-center mt-3 mb-5 me-5 phone-wide"
+                    >
+                      <img src="images/weather-mobile.png" alt="" />
+                    </div>
+
+                    <div
+                      class="row col-10 col-md-4 d-flex flex-wrap justify-content-center align-items-center ms-5 p-0 project-description"
+                    >
+                      <h2
+                        class="col-12 d-flex justify-content-center mb-4 p-0 text-center"
+                      >
+                        Weather Map <span style="font-size: 1rem;">(Early version!)</span>
+                      </h2>
+                      <p class="col-12 d-flex m-0 p-0 text-center">
+                        A front-end weather app created in React that utilizes the OpenWeatherMap,
+                        Tomorrow.io, and Mapbox API's to render live weather data together with an 
+                        integrated map for displaying current weather patterns such as precipitation 
+                        intensity and wind speed. Only in its early stages, the plan is to continue 
+                        improving the UI with better graphics/visualizations, and eventually 
+                        add full forecasting in the form of dashboards, plus a time slider 
+                        on the map that can extend backwards or forwards in time.
+                      </p>
+                      <div
+                        class="row justify-content-center align-items-end mt-2 mb-5 links"
+                      >
+                      <a
+                        class="col-4 btn link-code-wide rounded-5 mt-3 me-2"
+                        href="https://github.com/jazzorpheus/weather-app"
+                        target="_blank"
+                        >Source Code</a
+                      >
+                        <a
+                          class="col-4 btn link-visit-wide rounded-5 mt-3 ms-2"
+                          href="https://weather-app-lime-beta.vercel.app/"
+                          target="_blank"
+                          >Try out app!</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!--  -->
           <!-- Bytesized Book Reviews WIDESCREEN -->
           <!--  -->
@@ -368,7 +430,7 @@
                           class="col-4 btn link-visit-wide rounded-5 mt-3 ms-2"
                           href="https://jazzorpheus.github.io/shopping-list/"
                           target="_blank"
-                          >Try out app</a
+                          >Try out app!</a
                         >
                       </div>
                     </div>
@@ -494,6 +556,47 @@
         <!-- **********************************************************************************************************************************   NARROWSCREEN -->
 
         <!--  -->
+        <!-- Weather App NARROWSCREEN -->
+        <!--  -->
+        <div class="container-fluid projects-small-device my-5">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div
+              class="col-10 col-sm-8 col-md-6 d-flex justify-content-center p-0 phone-narrow"
+            >
+              <img src="images/weather-mobile.png" alt="" />
+            </div>
+
+            <div
+              class="col-10 col-sm-8 col-md-6 d-flex flex-wrap justify-content-center align-items-center p-md-5 p-0 m-0 project-description"
+            >
+              <h2 class="text-center mb-4 p-0">Weather Map <span style="font-size: 1rem;">(Early version!)</span></h2>
+              <p class="text-center">
+                A front-end weather app created in React that utilizes the OpenWeatherMap,
+                Tomorrow.io, and Mapbox API's to render live weather data together with an 
+                integrated map for displaying current weather patterns such as precipitation 
+                intensity and wind speed. Only in its early stages, the plan is to continue 
+                improving the UI with better graphics/visualizations, and eventually 
+                add full forecasting in the form of dashboards, plus a time slider 
+                on the map that can extend backwards or forwards in time.
+              </p>
+              <div class="row d-flex flex-nowrap mt-2 mb-4 links">
+                <a
+                  class="col-5 btn link-code-narrow rounded-5 me-2"
+                  href="https://github.com/jazzorpheus/weather-app"
+                  target="_blank"
+                  >Source Code</a
+                >
+                <a
+                  class="col-5 btn link-visit-narrow rounded-5 ms-2"
+                  href="https://weather-app-lime-beta.vercel.app/"
+                  target="_blank"
+                  >Try out app!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
         <!-- Bytesized Book Reviews NARROWSCREEN -->
         <!--  -->
         <div class="container-fluid projects-small-device my-5">
@@ -604,7 +707,7 @@
                   class="col-5 btn link-visit-narrow rounded-5 ms-2"
                   href="https://jazzorpheus.github.io/shopping-list/"
                   target="_blank"
-                  >Try out app</a
+                  >Try out app!</a
                 >
               </div>
             </div>

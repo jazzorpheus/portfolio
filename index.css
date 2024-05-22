@@ -1,3 +1,13 @@
+.emphasise-text {
+  color: rgba(30, 115, 172, 1);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.intro-text {
+  text-shadow: 0.2rem 0.2rem 0.1rem black;
+}
+
 /* ******************************************************************************************************************************** */
 /* ***************************************************************************************  BIG BRAND LOGOS */
 /* ******************************************************************************************************************************** */
@@ -59,8 +69,9 @@ body {
 #heading {
   margin-top: 3vw;
   padding: 3vw;
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0.05rem 0.05rem 2rem white;
   border-radius: 1.5rem;
 }
 
@@ -77,11 +88,10 @@ body {
 }
 
 h1 {
-  text-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 50, 1);
+  text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 50, 1);
+  text-shadow: 0.2rem 0.2rem 0.1rem black;
   color: white;
-  /* position: relative; */
-  /* top: 25%; */
-  /* font-weight: 700 !important; */
+  font-weight: bold !important;
 }
 @media (max-width: 700px) {
   h1 {
@@ -96,7 +106,6 @@ h1 {
   /* left: calc(50vw - 93.86px); */
   text-shadow: 0.06rem 0.07rem 0.02rem rgba(150, 180, 255, 1);
   transition: transform 0.2s;
-
   width: 70vw;
   max-width: 300px;
 }
@@ -304,6 +313,12 @@ li {
 /* ******************************************************************************************************************************** */
 /* ***************************************************************************************  INDIVIDUAL PROJECT STYLES */
 /* ******************************************************************************************************************************** */
+
+/* Weather App */
+.weather-front {
+  background-image: url("images/weather.png");
+  background-position: cover;
+}
 
 /* Bytesized Book Reviews */
 .bytesized-reviews-front {
