@@ -1,5 +1,5 @@
 .emphasise-text {
-  color: rgba(30, 115, 172, 1);
+  color: #2f96da;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -36,6 +36,11 @@
     width: 100%;
   }
 }
+@media (max-width: 575px) {
+  .img-var-display {
+    display: none;
+  }
+}
 
 /* ******************************************************************************************************************************** */
 /* ***************************************************************************************  BANNER & HEADINGS */
@@ -70,7 +75,7 @@ body {
   margin-top: 3vw;
   padding: 3vw;
   width: 70%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0.05rem 0.05rem 2rem white;
   border-radius: 1.5rem;
 }
@@ -81,9 +86,10 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   #heading {
     width: 100%;
+    border-radius: 0;
   }
 }
 
